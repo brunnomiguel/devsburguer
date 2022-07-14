@@ -2,17 +2,19 @@ import styled, { keyframes } from "styled-components";
 
 export const MainContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  z-index: 10;
+  top: -0px;
+  left: 0px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(0, 0, 0, 0.7);
+  
+  background-color: rgba(18, 18, 20, 0.5);
 `;
 const appear = keyframes`
   from{
@@ -27,8 +29,6 @@ const appear = keyframes`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
-  position: absolute;
 
   width: 300px;
   padding: 10px;

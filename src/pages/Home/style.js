@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
 
   ul {
-    max-width: 100%;
+    max-width: 1000px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

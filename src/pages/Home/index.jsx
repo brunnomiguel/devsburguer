@@ -2,7 +2,7 @@ import { Container } from "./style";
 import { LinearProgress, Box } from "@mui/material";
 
 import { useContext } from "react";
-import { ProductsContext } from "../../providers/Products/products";
+import { ProductsContext } from "../../providers/Products";
 
 import Product from "../../components/Product";
 

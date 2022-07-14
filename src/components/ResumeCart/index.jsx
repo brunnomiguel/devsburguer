@@ -2,9 +2,9 @@ import { Container, MainContainer, TitleContent, Content } from "./style";
 import { FaTimes } from "react-icons/fa";
 
 import { useContext } from "react";
-import { CartContext } from "../../providers/Cart/cart";
+import { CartContext } from "../../providers/Cart";
 
-import formatedValue from "../../utils/formatedValue";
+import { formatedValue } from "../../utils/formatedValue";
 import Button from "../Button";
 
 const ResumeCart = ({ id = "modal", onClose = () => {} }) => {

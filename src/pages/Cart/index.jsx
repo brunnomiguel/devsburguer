@@ -1,13 +1,13 @@
 import { ContainerEmpty, Content, Container, ResumeButton } from "./style";
 
 import { useState, useContext } from "react";
-import { CartContext } from "../../providers/Cart/cart";
+import { CartContext } from "../../providers/Cart";
 
 import { useHistory } from "react-router-dom";
 
 import ResumeCart from "../../components/ResumeCart";
 import Button from "../../components/Button";
-import CartList from "../../components/CartList";
+import CartProduct from "../../components/CartProduct";
 
 const Cart = () => {
   const [resumeOpen, setResumeOpen] = useState(false);
@@ -32,7 +32,7 @@ const Cart = () => {
       {resumeOpen ? <ResumeCart onClose={() => setResumeOpen(false)} /> : null}
       <ul>
         {cart.map((product) => {
-          return <CartList key={product.id} product={product} />;
+          return <CartProduct key={product.id} product={product} />;
         })}
       </ul>
     </Container>

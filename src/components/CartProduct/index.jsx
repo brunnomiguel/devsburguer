@@ -2,7 +2,7 @@ import { CartContent } from "./style";
 import { FaTrashAlt, FaMinus, FaPlus } from "react-icons/fa";
 
 import { useContext } from "react";
-import { CartContext } from "../../providers/Cart/cart";
+import { CartContext } from "../../providers/Cart";
 
 const CartList = ({ product }) => {
   const { removeToCart, addQuantity, removeQuantity } = useContext(CartContext);

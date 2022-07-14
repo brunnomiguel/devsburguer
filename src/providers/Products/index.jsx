@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-import formatedValue from "../../utils/formatedValue";
+import { formatedValue } from "../../utils/formatedValue";
 import { dataProducts } from "./dataProducts";
 
 export const ProductsContext = createContext([]);

@@ -2,6 +2,8 @@ import Routes from "./routes";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 import NavBar from "./components/NavBar";
+
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 const App = () => {
@@ -10,8 +12,8 @@ const App = () => {
       <NavBar />
       <GlobalStyle />
       <ToastContainer
-        position="top-right"
-        autoClose={5000}
+        position="bottom-center"
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
@@ -20,7 +22,6 @@ const App = () => {
         draggable
         pauseOnHover
       />
-      <ToastContainer />
       <Routes />
     </>
   );

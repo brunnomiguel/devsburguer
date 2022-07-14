@@ -4,7 +4,7 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { useHistory, Link } from "react-router-dom";
 
 import { useContext } from "react";
-import { CartContext } from "../../providers/Cart/cart";
+import { CartContext } from "../../providers/Cart";
 
 import Button from "../Button";
 import Input from "../Input";

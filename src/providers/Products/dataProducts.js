@@ -1,0 +1,51 @@
+export const dataProducts = [
+    {
+      id: 1,
+      name: "Hamburguer",
+      category: "Sanduíches",
+      price: 14.0,
+      img: "https://i.ibb.co/fpVHnZL/hamburguer.png",
+      quantity: 1,
+    },
+    {
+      id: 2,
+      name: "X-Burguer",
+      category: "Sanduíches",
+      price: 16.0,
+      img: "https://i.ibb.co/djbw6LV/x-burgue.png",
+      quantity: 1,
+    },
+    {
+      id: 3,
+      name: "Big Kenzie",
+      category: "Sanduíches",
+      price: 18.0,
+      img: "https://i.ibb.co/FYBKCwn/big-kenzie.png",
+      quantity: 1,
+    },
+    {
+      id: 4,
+      name: "Fanta Guaraná",
+      category: "Bebidas",
+      price: 6.0,
+      img: "https://i.ibb.co/cCjqmPM/fanta-guarana.png",
+      quantity: 1,
+    },
+    {
+      id: 5,
+      name: "Coca-Cola",
+      category: "Bebidas",
+      price: 4.99,
+      img: "https://i.ibb.co/fxCGP7k/coca-cola.png",
+      quantity: 1,
+    },
+    {
+      id: 6,
+      name: "Milkshake Ovomaltine",
+      category: "Bebidas",
+      price: 12.99,
+      img: "https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png",
+      quantity: 1,
+    },
+  ];
+  

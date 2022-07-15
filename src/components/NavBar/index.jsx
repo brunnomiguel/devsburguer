@@ -8,11 +8,14 @@ import { CartContext } from "../../providers/Cart";
 
 import Button from "../Button";
 import Input from "../Input";
+import { ProductsContext } from "../../providers/Products";
 
 const NavBar = () => {
   const history = useHistory();
 
   const { cart } = useContext(CartContext);
+  const { searchProduct, nameProduct, setNameProduct } =
+    useContext(ProductsContext);
 
   return (
     <Container>
@@ -22,7 +25,15 @@ const NavBar = () => {
         </h1>
       </Link>
       <div>
-        <Input type="text" placeholder="Pesquise algo específico...">
+        <Input
+          type="text"
+          placeholder="Pesquise por nome ou categoria"
+          value={nameProduct}
+          onChange={(event) => {
+            setNameProduct(event.target.value);
+            searchProduct(event.target.value);
+          }}
+        >
           <Button>
             <FaSearch />
           </Button>

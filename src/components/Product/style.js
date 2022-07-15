@@ -46,6 +46,12 @@ export const Container = styled.li`
 
         color: var(--content-text-color);
       }
+      p:nth-child(2) {
+        font-size: 18px;
+      }
+      p:last-child {
+        font-weight: bold;
+      }
     }
     button {
       width: 210px;

@@ -20,7 +20,7 @@ export const InputContent = styled.div`
     border-radius: 6px 0px 0px 6px;
 
     input {
-      width: 80%;
+      width: 90%;
 
       background-color: transparent;
       color: var(--content-text-color);

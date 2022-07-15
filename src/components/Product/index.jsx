@@ -8,7 +8,7 @@ import Button from "../Button";
 const Product = ({ product }) => {
   const { addToCart } = useContext(CartContext);
 
-  const { name, priceFormated, img } = product;
+  const { name, category, priceFormated, img } = product;
 
   return (
     <Container>
@@ -18,6 +18,7 @@ const Product = ({ product }) => {
       <div>
         <div>
           <p>{name}</p>
+          <p>{category}</p>
           <p>{priceFormated}</p>
         </div>
         <Button onClick={() => addToCart(product)}>

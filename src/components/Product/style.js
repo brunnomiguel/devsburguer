@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.li`
+  width: 290px;
   margin: 10px;
 
   display: grid;
